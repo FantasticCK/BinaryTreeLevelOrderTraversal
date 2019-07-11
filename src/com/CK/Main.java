@@ -44,9 +44,8 @@ class Solution {
         if (root == null) return new ArrayList<>();
         List<List<Integer>> resList = new ArrayList<>();
         List<TreeNode> bfArray = new ArrayList<>();
-        TreeNode stopSign = null;
         bfArray.add(root);
-        bfArray.add(stopSign);
+        bfArray.add(null);
         traverseBF(bfArray, resList);
         return resList;
     }
